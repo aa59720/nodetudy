@@ -5,9 +5,9 @@ var server= http.createServer();
 
 // request 请求事件处理函数，要两个参数
     // Requuest 请求对象
-        // 请求对象可以活客户端的一些请求信息  比如请求路径
+        // 请求对象,可以活客户端的一些请求信息  比如请求路径
     // Response 响应对象
-        // 相应对象可以用客户端发送响应消息
+        // 相应对象,可以用客户端发送响应消息
 
 server.on('request', function(request, response) {
     // http://127.0.0.1:3000/a
@@ -18,7 +18,7 @@ server.on('request', function(request, response) {
 
     response.write('hello');
     response.write(' node');
-
+    
     // 告诉客户端我的话说完了 可以给用户了
     response.end()
 
