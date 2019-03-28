@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ age }}</title>
 </head>
 <body>
     <h1>首页</h1>
+    <p>名字：{{ name }}</p>
+    <p>年龄：{{ age }}</p>
+    <p>爱好：{{ each like }} {{ $value }} {{ /each }}</p>
 </body>
+<script>
+    var fo = '{{ age }}';
+</script>
 </html>
